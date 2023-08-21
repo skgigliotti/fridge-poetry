@@ -1,14 +1,13 @@
-import './App.css';
-import Word from './fridge/Word';
+import './Word.css';
 
-function App() {
+function Word() {
   return (
     <div className="App">
       <header className="App-header">
-        <Word/>
+        <p>hello world</p>
       </header>
     </div>
   );
 }
 
-export default App;
+export default Word;
