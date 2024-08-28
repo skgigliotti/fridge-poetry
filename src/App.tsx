@@ -6,7 +6,7 @@ let my_words = [
   'hello', 'world', 'I', 'am', 'a', 'computer', 'scientist', '.',
   'I', 'am', 'passionate', 'about', 'creating', 'technology', 'for', 'social', 'good',
   'and', 'empowering', 'underrepresented', 'students', 'to', 'learn', 'the', 'art', 'of', 'programming', '.',
-  'My', 'current', 'side', 'hustle', 'is', 'cat', 'sitting', '.',
+  'My', 'current', 'side', 'hustle', 'is', 'cat', 'sitting', 'to', 'fund', 'my', 'photography', 'projects', '.',
   'New', 'inquires', 'welcome', '!' 
 ]
 
@@ -14,8 +14,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Word word={'Sophia'}/>
-        <Word word={'Gigliotti'}/>
+        <Word className='Word' word={'Sophia'}/>
+        <Word className='Word' word={'Gigliotti'}/>
+      </header>
       <DropZone/>
         <div className="flex-grid">
         {
@@ -24,7 +25,6 @@ function App() {
           })
         }
         </div>
-      </header>
     </div>
   );
 }
