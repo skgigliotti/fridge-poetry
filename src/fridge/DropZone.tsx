@@ -11,20 +11,25 @@ function DropZone() {
     const handleDrop = (event: React.DragEvent<HTMLElement>) => {
         const id = event.dataTransfer.getData('text');
         setWords([...droppedWords, id]);
+        setDragOver(false);
     }
     return (
-        <div 
-        onDragOver={enableDropping}
-        onDrop={handleDrop}
-        onDragEnter={handleDragOverStart}
-        onDragLeave={handleDragOverEnd}
-        className={ dragOver ? 'hovering drop-zone' : 'drop-zone' }>
+        <div className="drop-zone flex-grid">
+        <span className="dropped-words">
         {
           droppedWords.map(function(word, i) {
             return <Word word={word} key={i}/>;
           })
         }
-        </div>
+        </span>
+        <span 
+            onDragOver={enableDropping}
+            onDrop={handleDrop}
+            onDragEnter={handleDragOverStart}
+            onDragLeave={handleDragOverEnd}
+            className={ dragOver ? 'hovering drop-space' : 'drop-space' }>
+        </span>
+        </div>    
     );
 }
   
