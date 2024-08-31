@@ -1,0 +1,19 @@
+.hovering {
+    font-weight: 'bold';
+    background: #cdcdcd;
+}
+
+.drop-zone {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropped-words {
+    display: flex;
+    flex-direction: row;
+}
+
+.drop-space {
+    flex-grow: 1
+    
+}
