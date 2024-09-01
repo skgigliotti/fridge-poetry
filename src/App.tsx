@@ -26,7 +26,8 @@ function App() {
           })
         }
       </div>
-      <Photo img_url='https://lh3.googleusercontent.com/pw/AP1GczP_g_n_mb8fpt8XxgwAUbjANU06r7KGX_uRsbiaS2HKxrphSuEgJqzIk_g6_DzN0cZakh5UEqw_8NWcOcDwwl3tp0xHVdzjupsSxmUis0e53w4KboNEPvYkK3FxeQOCTCRKea0LRIAcK4ML-tN6pNd8=w2836-h1890-s-no?authuser=0'/>
+      <Photo img_path='./assets/images/ferry_building.jpg' vertical={true}/>
+      <Photo img_path='./assets/images/don_wizard.jpg'/>
     </div>
   );
 }
