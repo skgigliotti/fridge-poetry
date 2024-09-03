@@ -33,14 +33,13 @@ function App() {
       </div>
       <DropZone/>
       <div className='flex-main'>
-        <Photo img_path='./assets/images/ferry_building.jpg' vertical={true}/>
         <Photo img_path='./assets/images/don_wizard.jpg'/>
-        <Photo img_path='./assets/images/akihabara.jpg'/>
-        <Photo img_path='./assets/images/bonita_tunnel.jpg' vertical={true}/>
         <Photo img_path='./assets/images/hierve_el_agua.jpg'/>
+        <Photo img_path='./assets/images/akihabara.jpg'/>
+        <Photo img_path='./assets/images/ferry_building.jpg' vertical={true}/>
+        <Photo img_path='./assets/images/bonita_tunnel.jpg' vertical={true}/>
         <Photo img_path='./assets/images/macro_bee.jpg' vertical={true}/>
         <Photo img_path='./assets/images/transamerica.jpg' vertical={true}/>
-        <Photo img_path='./assets/images/mission_sb.jpg'/>
       </div>
     </div>
   );
