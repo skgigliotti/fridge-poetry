@@ -14,7 +14,7 @@ function DropZone() {
         setDragOver(false);
     }
     return (
-        <div className="drop-zone flex-grid">
+        <div className="drop-zone flex-main">
         <span className="dropped-words">
         {
           droppedWords.map(function(word, i) {

@@ -4,23 +4,23 @@ import { Stage, Layer, Rect, Image, Circle } from 'react-konva';
 function Photo({img_path, vertical=false}:any) {
   const image = new window.Image()
   image.src = require(`${img_path}`)
-  var img_width = 300
-  var img_height = 200
+  var img_width = 450
+  var img_height = 300
   if (vertical) {
-      img_width = 200
-      img_height = 300
-    }
+      img_width = 300
+      img_height = 450
+  }
   var mag_x = img_width * 0.40
   var mag_y = img_height * 0.16
 
   return (
     <div className="photo">
-        <Stage width={window.innerWidth} height={window.innerHeight}>
+        <Stage width={img_width + 50} height={img_height + 100}>
             <Layer id='print'>
             <Image
                 image={image}
                 x={20}
-                y={70}
+                y={90}
                 width={img_width}
                 height={img_height}
                 shadowBlur={10}
@@ -43,7 +43,7 @@ function Photo({img_path, vertical=false}:any) {
                 fill='#535353'
             />
             <Circle x={50} y={-5} radius={25} fill="#5c5b5b"/>
-            <Circle x={50} y={-5} radius={9} fill="#e6e6e6" shadowBlur={1}/>
+            <Circle x={50} y={-5} radius={9} fill="#d9d7d7" shadowBlur={1}/>
             </Layer>
         </Stage>
     </div>
