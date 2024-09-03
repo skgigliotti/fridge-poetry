@@ -1,0 +1,5 @@
+.photo {
+    img {
+        max-height: 500px;
+    }
+}
