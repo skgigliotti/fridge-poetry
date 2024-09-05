@@ -1,52 +1,24 @@
 import './Photo.css';
-import { Stage, Layer, Rect, Image, Circle } from 'react-konva';
+import { Card, Image } from 'antd';
 
-function Photo({img_path, vertical=false}:any) {
-  const image = new window.Image()
-  image.src = require(`${img_path}`)
-  var img_width = 450
-  var img_height = 300
+function Photo({img_path, alt_text, vertical=false}:any) {
+  var img_src = require(`${img_path}`)
+  var img_width = '450px'
+  var img_height = '300px'
   if (vertical) {
-      img_width = 300
-      img_height = 450
+      img_width = '300px'
+      img_height = '450px'
   }
-  var mag_x = img_width * 0.40
-  var mag_y = img_height * 0.16
 
   return (
-    <div className="photo">
-        <Stage width={img_width + 50} height={img_height + 100}>
-            <Layer id='print'>
-            <Image
-                image={image}
-                x={20}
-                y={90}
-                width={img_width}
-                height={img_height}
-                shadowBlur={10}
-            />
-            </Layer>
-            {/* <Layer id='magnet' x={mag_x} y={mag_y}>
-            <Rect
-                x={0}
-                y={0}
-                width={100}
-                height={50}
-                fill='#5c5b5b'
-                shadowBlur={10}
-            />
-            <Rect
-                x={10}
-                y={40}
-                width={80}
-                height={5}
-                fill='#535353'
-            />
-            <Circle x={50} y={-5} radius={25} fill="#5c5b5b"/>
-            <Circle x={50} y={-5} radius={9} fill="#d9d7d7" shadowBlur={1}/>
-            </Layer> */}
-        </Stage>
-    </div>
+    <Card style={{ maxHeight: img_height, maxWidth: img_width }}> 
+    <Image
+      alt={alt_text}
+      width="100%"
+      height="100%"
+      src={img_src}
+    />   
+    </Card>
   );
 }
 
