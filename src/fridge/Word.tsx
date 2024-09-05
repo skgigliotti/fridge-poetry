@@ -1,11 +1,14 @@
 import './Word.css';
+import { Card } from "antd";
 
 function Word({word}:any) {
   return (
-    <div className="word">
-        <p 
-        onDragStart={handleDragStart} draggable='true'>{word}</p>
-    </div>
+    <span 
+        onDragStart={handleDragStart} draggable='true'>
+    <Card className="word" size="small" style={{ boxShadow: '#000000', borderRadius: '0px', padding:'0px' }}>
+        {word}
+    </Card>
+    </span>
   );
 }
 

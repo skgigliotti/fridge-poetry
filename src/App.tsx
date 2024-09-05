@@ -19,13 +19,11 @@ function App() {
         <Word className='Word' word={'Gigliotti'}/>
       </header>
       <div className='flex-main'>
-        <div className="flex-text">
           {
             my_words.map(function(word, i) {
               return <Word word={word} key={i}/>;
             })
           }
-        </div>
       <div className='flex-photo'>
         <Photo img_path='./assets/images/bridge.jpg' vertical={true}/>
       </div>

@@ -26,7 +26,7 @@ function Photo({img_path, vertical=false}:any) {
                 shadowBlur={10}
             />
             </Layer>
-            <Layer id='magnet' x={mag_x} y={mag_y}>
+            {/* <Layer id='magnet' x={mag_x} y={mag_y}>
             <Rect
                 x={0}
                 y={0}
@@ -44,7 +44,7 @@ function Photo({img_path, vertical=false}:any) {
             />
             <Circle x={50} y={-5} radius={25} fill="#5c5b5b"/>
             <Circle x={50} y={-5} radius={9} fill="#d9d7d7" shadowBlur={1}/>
-            </Layer>
+            </Layer> */}
         </Stage>
     </div>
   );
