@@ -3,7 +3,6 @@ import Word from './fridge/Word';
 import DropZone from './fridge/DropZone'
 import Photo from './fridge/Photo'
 import { Flex } from 'antd';
-import { wrap } from 'module';
 
 let my_words = [
   'hello', 'world', 'I', 'am', 'a', 'computer', 'scientist', '.',
@@ -32,15 +31,15 @@ function App() {
         <Word className='Word' word={'Sophia'}/>
         <Word className='Word' word={'Gigliotti'}/>
       </header>
-      <Flex vertical={false} justify="space-between" style={{padding: '2em'}}>
-          <Flex wrap style={{maxWidth: "50%"}}>
+      <Flex wrap vertical={false} justify="space-evenly" style={{padding: '2em'}}>
+          <Flex wrap style={{maxWidth: "70%"}}>
           {
             my_words.map(function(word, i) {
               return <Word word={word} key={i}/>;
             })
           }
           </Flex>
-          <div style={{maxWidth: "50%"}}>
+          <div style={{maxWidth: "30%"}}>
           <Photo img_path='./assets/images/bridge.jpg' alt_text="Golden Gate Bridge at Golden Hour with Birds" vertical={true}/>
           </div>
       </Flex>
