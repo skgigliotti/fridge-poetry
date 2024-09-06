@@ -8,10 +8,10 @@ function Photo({img_path, alt_text, vertical=false}:any) {
   var padding_bottom = '0'
   var padding_right = '10%'
   if (vertical) {
-      img_width = '300px'
-      img_height = '450px'
-      padding_bottom = '10%'
-      padding_right = '0'
+    img_width = '300px'
+    img_height = '450px'
+    padding_bottom = '10%'
+    padding_right = '0'
   }
 
   return (
