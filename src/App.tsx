@@ -23,6 +23,11 @@ let images =
     {'img_path': './assets/images/transamerica.jpg', 'alt_text': '', 'vertical': true},
   ]
 
+let poems = [
+  [['hello', 'world'], ['I', 'am', 'a', 'computer', 'scientist'], ['passionate', 'about', 'creating', 'technology', 'for', 'social', 'good']],
+  [[], [], []],
+]
+
 
 function App() {
   return (
@@ -31,15 +36,21 @@ function App() {
         <Word className='Word' word={'Sophia'}/>
         <Word className='Word' word={'Gigliotti'}/>
       </header>
-      <Flex wrap vertical={false} justify="space-evenly" style={{padding: '2em'}}>
-          <Flex wrap style={{maxWidth: "70%"}}>
+      <Flex wrap vertical={false} justify="space-evenly" style={{ padding: '2em' }}>
+          <Flex wrap style={{maxWidth: "50%"}}>
           {
-            my_words.map(function(word, i) {
-              return <Word word={word} key={i}/>;
+            poems.map(function(poem, i){
+              return (
+                poem.map(function(line, j){
+                  return (<Flex wrap style={{ minWidth: "100%", justifyContent: "flex-end" }} vertical={false} key={`${i}${j}`}>{line.map(function(word, k){
+                    return <Word word={word} key={`${i}${j}${k}`}/>;
+                  })} </Flex>)
+                })
+              )
             })
           }
           </Flex>
-          <div style={{maxWidth: "30%"}}>
+          <div style={{ maxWidth: "50%" }}>
           <Photo img_path='./assets/images/bridge.jpg' alt_text="Golden Gate Bridge at Golden Hour with Birds" vertical={true}/>
           </div>
       </Flex>
