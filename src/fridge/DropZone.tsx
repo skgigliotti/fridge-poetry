@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import './DropZone.css'; 
 import Word from "./Word";
+import { Divider } from "antd";
 
-let words: Array<string> = ['write', 'a', 'poem']
+let words: Array<string> = ['hello', 'world']
 function DropZone() {
     const [dragOver, setDragOver] = useState(false); 
     const [droppedWords, setWords] = useState(words || []);
@@ -15,6 +16,8 @@ function DropZone() {
     }
     return (
         <div className="drop-zone flex-main">
+        <Divider orientation="left" style={{color: "#d9d9d9"}}>Write a poem by dragging words below</Divider>
+
         <span className="dropped-words">
         {
           droppedWords.map(function(word, i) {
