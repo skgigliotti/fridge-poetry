@@ -11,4 +11,5 @@
     display: flex;
     flex-direction: row;
     font-family: 'Times New Roman', Times, serif;
+    border-color: #d9d9d9;
 }

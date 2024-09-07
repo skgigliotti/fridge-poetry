@@ -2,6 +2,7 @@ import './App.css';
 import Word from './fridge/Word';
 import DropZone from './fridge/DropZone'
 import ContentCarousel from './fridge/ContentCarousel';
+import Portfolio from './Portfolio';
 
 let my_words = [
   'hello', 'world', 'I', 'am', 'a', 'computer', 'scientist', '.',
@@ -19,6 +20,7 @@ function App() {
         <Word word={'Sophia'} fontSize='36px'/>
         <Word word={'Gigliotti'} fontSize='36px'/>
       </header>
+      <Portfolio/>
       <ContentCarousel/>
       <DropZone/>
     </div>
