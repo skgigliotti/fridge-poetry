@@ -1,15 +1,14 @@
 import './App.css';
 import Word from './fridge/Word';
-import DropZone from './fridge/DropZone'
-import ContentCarousel from './fridge/ContentCarousel';
+import DropZone from './fridge/DropZone';
 import Portfolio from './Portfolio';
+import { Flex } from 'antd';
 
 let my_words = [
-  'hello', 'world', 'I', 'am', 'a', 'computer', 'scientist', '.',
-  'I', 'am', 'passionate', 'about', 'creating', 'technology', 'for', 'social', 'good',
-  'and', 'empowering', 'underrepresented', 'students', 'to', 'learn', 'the', 'art', 'of', 'programming', '.',
-  'My', 'current', 'side', 'hustle', 'is', 'cat', 'sitting', 'to', 'fund', 'my', 'photography', 'projects', '.',
-  'New', 'inquires', 'welcome', '!' 
+  'welcome', 'shout', 'the',  'hello', 'world', 'foo', 'a', 'cats', 'beauty', 'programmatically', 'joy', 'peaceful',
+  'tomorrow', 'whirlwind', 'oneiric', 'sunshine', 'perplexing', 'and', 'nor', 'whisper', 'flowers',
+  'sing', 'grow', 'stars', 'computers', 'today', 'dark', 'glow', 'dance', 'delicious', 'run',
+  'an', 'that', 'wonder', 'yesterday', 'distracted', 'imminent'
 ]
 
 
@@ -21,7 +20,10 @@ function App() {
         <Word word={'Gigliotti'} fontSize='36px'/>
       </header>
       <Portfolio/>
-      <ContentCarousel/>
+      <Flex wrap style={{ maxWidth: "100%", padding: "2em"}} vertical={false}>
+        {my_words.map(function(word, i){
+            return <Word word={word} key={i}/>;}
+      )} </Flex>
       <DropZone/>
     </div>
   );

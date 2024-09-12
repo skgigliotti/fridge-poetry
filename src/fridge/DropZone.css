@@ -3,17 +3,14 @@
     background: #d9d9d9;
 }
 
-.drop-zone {
-    display: flex;
-    flex-direction: row;
-}
-
 .dropped-words {
     display: flex;
     flex-direction: row;
 }
 
 .drop-space {
-    flex-grow: 1
-    
+    flex-grow: 1;
+    min-height: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
 }

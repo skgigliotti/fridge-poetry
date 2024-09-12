@@ -51,8 +51,6 @@ body {
 
 .flex-main {
   display: flex;
-  flex-wrap: wrap;
   max-width: 100%;
-  margin: 20px 100px 20px 100px;
-  flex-direction: row;
+  flex-direction: column;
 }
