@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fridge-poetry/static/css/main.99963685.css",
+    "main.js": "/fridge-poetry/static/js/main.46de2dd9.js",
+    "static/js/787.41a13de0.chunk.js": "/fridge-poetry/static/js/787.41a13de0.chunk.js",
+    "index.html": "/fridge-poetry/index.html",
+    "main.99963685.css.map": "/fridge-poetry/static/css/main.99963685.css.map",
+    "main.46de2dd9.js.map": "/fridge-poetry/static/js/main.46de2dd9.js.map",
+    "787.41a13de0.chunk.js.map": "/fridge-poetry/static/js/787.41a13de0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99963685.css",
+    "static/js/main.46de2dd9.js"
+  ]
+}
