@@ -1,11 +1,6 @@
 .hovering {
     font-weight: 'bold';
-    background: #cdcdcd;
-}
-
-.drop-zone {
-    display: flex;
-    flex-direction: row;
+    background: #d9d9d9;
 }
 
 .dropped-words {
@@ -14,6 +9,8 @@
 }
 
 .drop-space {
-    flex-grow: 1
-    
+    flex-grow: 1;
+    min-height: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
