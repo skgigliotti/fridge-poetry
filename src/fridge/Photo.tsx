@@ -15,13 +15,13 @@ function Photo({img_path, alt_text, vertical=false}:any) {
   }
 
   return (
-    <Card style={{ borderRadius: '2px', maxHeight: img_height, maxWidth: img_width }}> 
+    <Card style={{ borderRadius: '2px', maxHeight: img_height, maxWidth: img_width, borderColor: "#d9d9d9" }}> 
     <Image
       alt={alt_text}
       width="100%"
       height="100%"
       src={img_src}
-    />   
+    /> 
     <div style={{ paddingBottom: padding_bottom, paddingRight: padding_right }}></div>
     </Card>
   );

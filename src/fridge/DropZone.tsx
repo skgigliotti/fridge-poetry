@@ -16,7 +16,7 @@ function DropZone() {
     }
     return (
         <div className="drop-zone flex-main">
-        <Divider orientation="left" style={{color: "#d9d9d9"}}>Write a poem by dragging words below</Divider>
+        <Divider orientation="left" style={{color: "#d9d9d9"}}>Write a poem by dragging words to the space below</Divider>
 
         <span className="dropped-words">
         {
